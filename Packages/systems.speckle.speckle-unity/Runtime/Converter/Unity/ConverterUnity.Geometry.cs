@@ -249,14 +249,15 @@ namespace Objects.Converter.Unity
                 throw new ArgumentException("Definition was null", nameof(instance));
 
             var defName = CoreUtils.GenerateObjectName(instance.definition);
+            
             // Check for existing converted object
-            if (LoadedAssets.TryGetObject(instance.definition, out GameObject? existingGo))
-            {
-                var go = InstantiateCopy(existingGo);
-                go.name = defName;
-                TransformToNativeTransform(go.transform, instance.transform);
-                return go;
-            }
+            // if (LoadedAssets.TryGetObject(instance.definition, out GameObject? existingGo))
+            // {
+            //     var go = InstantiateCopy(existingGo);
+            //     go.name = defName;
+            //     TransformToNativeTransform(go.transform, instance.transform);
+            //     return go;
+            // }
 
             // Convert the block definition
             GameObject native = new(defName);
