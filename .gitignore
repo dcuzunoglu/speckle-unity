@@ -78,3 +78,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Rr]esources/[Mm]aterials/
 /[Aa]ssets/[Rr]esources/[Gg]eometry/
 /[Aa]ssets/[Rr]esources/[Pp]refabs/
+
+# Project files
+.DS_Store
+.vscode/
