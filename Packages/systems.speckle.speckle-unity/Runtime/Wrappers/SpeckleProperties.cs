@@ -18,7 +18,7 @@ namespace Speckle.ConnectorUnity.Wrappers
     public class SpeckleProperties : MonoBehaviour, ISerializationCallbackReceiver
     {
         [SerializeField, HideInInspector]
-        private string _serializedData = "";
+        public string _serializedData = "";
 
         [SerializeField, HideInInspector]
         private bool _hasChanged;
